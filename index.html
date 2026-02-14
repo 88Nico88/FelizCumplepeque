@@ -14,67 +14,50 @@
 
 body{
     font-family: 'Segoe UI', sans-serif;
-    background: black;
-    color: white;
+    background:black;
+    color:white;
     overflow-x:hidden;
 }
 
-/* ===== FONDO ESTRELLAS ===== */
+/* ===== ESTRELLAS FUGACES ===== */
 
-.stars{
-    position:fixed;
-    width:100%;
-    height:100%;
-    background: radial-gradient(white 1px, transparent 1px);
-    background-size: 40px 40px;
-    z-index:-2;
-}
-
-/* estrellas pequeñas adicionales */
-.stars::after{
-    content:"";
-    position:absolute;
-    width:100%;
-    height:100%;
-    background: radial-gradient(white 1px, transparent 1px);
-    background-size: 80px 80px;
-    opacity:0.4;
-}
-
-/* estrellas fugaces */
 .shooting-star{
     position: fixed;
-    top: -10px;
-    width: 3px;
-    height: 120px;
+    top: -150px;
+    width: 4px;
+    height: 150px;
     background: linear-gradient(-45deg, white, transparent);
-    opacity:0.8;
-    animation: shoot 6s linear infinite;
+    opacity:0.9;
+    transform: rotate(45deg);
+    animation: shoot 8s linear infinite;
+    z-index:-1;
 }
 
-.shooting-star:nth-child(1){ left:10%; animation-delay:0s;}
-.shooting-star:nth-child(2){ left:40%; animation-delay:2s;}
-.shooting-star:nth-child(3){ left:70%; animation-delay:4s;}
+.shooting-star:nth-child(1){ left:15%; animation-delay:0s;}
+.shooting-star:nth-child(2){ left:45%; animation-delay:3s;}
+.shooting-star:nth-child(3){ left:75%; animation-delay:6s;}
 
 @keyframes shoot{
-    0%{ transform: translateY(0) translateX(0) rotate(45deg);}
-    100%{ transform: translateY(100vh) translateX(-200px) rotate(45deg);}
+    0%{ transform: translateY(0) translateX(0) rotate(45deg); opacity:1;}
+    100%{ transform: translateY(120vh) translateX(-300px) rotate(45deg); opacity:0;}
 }
 
 /* ===== SECCIONES ===== */
 
 section{
-    padding:80px 10%;
+    padding:90px 10%;
 }
 
 h1{
-    font-size:3rem;
+    font-size:2.8rem;
     margin-bottom:20px;
+    text-align:center;
 }
 
 h2{
-    margin-bottom:20px;
+    margin-bottom:40px;
     font-weight:300;
+    text-align:center;
 }
 
 p{
@@ -93,14 +76,14 @@ p{
 }
 
 .hero img{
-    width:350px;
+    width:380px;
     height:auto;
     border-radius:20px;
     margin-bottom:30px;
     object-fit:contain;
 }
 
-/* layout texto + imagen */
+/* layout imagen + texto */
 .split{
     display:flex;
     gap:60px;
@@ -109,7 +92,7 @@ p{
 }
 
 .split img{
-    width:400px;
+    width:420px;
     border-radius:20px;
 }
 
@@ -123,7 +106,7 @@ p{
 }
 
 .sorpresa img{
-    width:500px;
+    width:600px;
     max-width:90%;
     border-radius:20px;
     margin-bottom:30px;
@@ -131,8 +114,8 @@ p{
 
 footer{
     text-align:center;
-    padding:40px;
-    opacity:0.6;
+    padding:60px;
+    font-size:1.2rem;
 }
 
 @media(max-width:900px){
@@ -145,7 +128,6 @@ footer{
 
 <body>
 
-<div class="stars"></div>
 <div class="shooting-star"></div>
 <div class="shooting-star"></div>
 <div class="shooting-star"></div>
@@ -188,27 +170,42 @@ footer{
     </div>
 </section>
 
-<!-- ===== SECCIÓN SORPRESA ===== -->
+<!-- ===== COCHAMÓ ===== -->
+
+<section class="split">
+    <div>
+        <p>14 de febrero de 2024 — Un picnic bajo las estrellas, a orillas del río en Cochamó.
+        uno de los momentos mas bonitos de nuestra relacion. Nos quedamos ahí casi toda la noche, sin apuro, con el cielo como testigo de algo que recién comenzaba.
+        Fue nuestro primer San Valentín. Una noche que no voy a olvidar nunca.</p>
+
+        <p>Hoy, a tus 21 años, vives la vida a tu ritmo. Disfrutas el presente sin miedo,
+        pero sin quedarte quieta. Avanzas y creces, incluso cuando no todo es claro.</p>
+    </div>
+    <img src="rio-cochamo.jpg" alt="Cochamó">
+</section>
+
+<!-- ===== BOTÓN SORPRESA ===== -->
 
 <section class="sorpresa">
-    <img src="IMG_2214.jpeg" alt="14 de febrero">
-    <p>14 de febrero de 2024 — Un picnic bajo las estrellas, a orillas del río en Cochamó.
-    uno de los momentos mas bonitos de nuestra relacion. Nos quedamos ahí casi toda la noche, sin apuro, con el cielo como testigo de algo que recién comenzaba.
-    Fue nuestro primer San Valentín. Una noche que no voy a olvidar nunca.</p>
 
-    <p>Hoy, a tus 21 años, vives la vida a tu ritmo. Disfrutas el presente sin miedo,
-    pero sin quedarte quieta. Avanzas y creces, incluso cuando no todo es claro.</p>
+    <button id="btnSorpresa" onclick="mostrarSorpresa()">
+        ✨ Ver nuestro primer 14 de febrero
+    </button>
+
+    <div id="contenidoSorpresa" class="contenido-sorpresa">
+        <img src="constelaciones.jpg" alt="Constelaciones">
+        <p>
+        14 de febrero de 2024 — Un picnic bajo las estrellas, a orillas del río en Cochamó.
+        uno de los momentos mas bonitos de nuestra relacion. Nos quedamos ahí casi toda la noche, sin apuro, con el cielo como testigo de algo que recién comenzaba.
+        Fue nuestro primer San Valentín. Una noche que no voy a olvidar nunca.
+        </p>
+    </div>
+
 </section>
 
 <footer>
-    Hecho con amor ✨
+    Feliz cumple Peque ✨
 </footer>
 
 </body>
 </html>
-
-
-
-
-
-
