@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edición Especial | 21 Años</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    font-family:'Inter', sans-serif;
+    background:#f4f4f4;
+    color:#222;
+}
+header{
+    background:white;
+    text-align:center;
+    padding:30px 20px;
+    border-bottom:3px solid #111;
+}
+header h1{
+    font-family:'Playfair Display', serif;
+    font-size:48px;
+    margin:0;
+    letter-spacing:2px;
+}
+header p{
+    margin:5px 0 0 0;
+    color:#777;
+    font-size:14px;
+}
+.container{
+    max-width:1100px;
+    margin:40px auto;
+    background:white;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+.hero img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+    border-radius:8px;
+}
+.titulo{
+    font-family:'Playfair Display', serif;
+    font-size:40px;
+    margin:30px 0 15px 0;
+}
+.bajada{
+    font-size:18px;
+    color:#555;
+    margin-bottom:30px;
+}
+.contenido{
+    column-count:2;
+    column-gap:40px;
+    font-size:18px;
+    line-height:1.8;
+    text-align:justify;
+}
+.imagen-sec{
+    margin:40px 0;
+}
+.imagen-sec img{
+    width:100%;
+    border-radius:8px;
+}
+blockquote{
+    font-family:'Playfair Display', serif;
+    font-size:26px;
+    margin:40px 0;
+    text-align:center;
+}
+footer{
+    text-align:center;
+    margin-top:50px;
+    font-size:14px;
+    color:#999;
+}
+@media(max-width:900px){
+    .contenido{
+        column-count:1;
+    }
+    .titulo{
+        font-size:30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>EDICIÓN ESPECIAL</h1>
+    <p>Domingo | Celebración de Cumpleaños | 21 Años</p>
+</header>
+
+<div class="container">
+
+    <div class="hero">
+        <img src="samira-portada.jpg" alt="Samira">
+    </div>
+
+    <div class="titulo">
+        Samira cumple 21 años: la coincidencia más simple y bonita que cambió todo
+    </div>
+
+    <div class="bajada">
+        Una historia que comenzó sin expectativas en Valdivia y terminó convirtiéndose en una decisión real de vida compartida.
+    </div>
+
+    <div class="contenido">
+        <p>
+        Hoy estás de cumpleaños. 21 años. Y sigues siendo una de las coincidencias más simples y bonitas que he tenido.
+        Todo comenzó en Valdivia, poco después de que yo llegara a vivir allá. Una noche cualquiera salí solo, sin conocer a nadie,
+        solo con ganas de ver qué pasaba. Me acerqué a un grupo al azar. Tú no estabas. Llegaste más tarde, invitada por otros.
+        En ese momento no ocurrió nada extraordinario, pero algo quedó sembrado.
+        </p>
+
+        <p>
+        Con el tiempo volvimos a coincidir en Santiago. Te invité a salir, y desde ese día empezamos a hacer planes juntos.
+        Nuestros planes siempre fueron simples: una vista bonita, comida compartida y paz. Mucha paz.
+        </p>
+
+        <p>
+        Después vino la distancia. Yo en Santiago, tú en Valdivia. No fue fácil, pero fue honesto.
+        Fue ahí cuando entendí que no quería que esto fuera algo pasajero.
+        Decidimos vivir juntos. Para mí ya era conocido; para ti, completamente nuevo.
+        Fue una decisión real. Y desde entonces, seguimos eligiéndonos.
+        </p>
+
+        <p>
+        Tienes una forma muy natural de ser. Tierna, sincera y sin miedo a demostrar lo que sientes.
+        Abrazas y estás presente. Incluso en los momentos difíciles, tu forma de acompañar siempre ha sido un regalo.
+        </p>
+    </div>
+
+    <div class="imagen-sec">
+        <img src="rio-cochamo.jpg" alt="Cochamó">
+    </div>
+
+    <blockquote>
+        14 de febrero de 2024 — Un picnic bajo las estrellas, a orillas del río en Cochamó.
+        El inicio de algo que no dejó de crecer.
+    </blockquote>
+
+    <div class="contenido">
+        <p>
+        Nos quedamos ahí casi toda la noche, sin apuro, con el cielo como testigo de algo que recién comenzaba.
+        Fue nuestro primer San Valentín. Una noche que no voy a olvidar nunca.
+        </p>
+
+        <p>
+        Hoy, a tus 21 años, vives la vida a tu ritmo. Disfrutas el presente sin miedo,
+        pero sin quedarte quieta. Avanzas y creces, incluso cuando no todo es claro.
+        </p>
+
+        <p>
+        No sé exactamente qué nos traerá el futuro,
+        pero sí sé que quiero seguir compartiéndolo contigo.
+        </p>
+    </div>
+
+    <div class="imagen-sec">
+        <img src="samira-mirada.jpg" alt="Mirada">
+    </div>
+
+    <div class="imagen-sec">
+        <img src="samira-divertida.jpg" alt="Momentos">
+    </div>
+
+    <footer>
+        © 2026 | Edición Conmemorativa | Historia en curso
+    </footer>
+
+</div>
+
+</body>
+</html>
