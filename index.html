@@ -184,29 +184,42 @@ footer{
     <img src="rio-cochamo.jpg" alt="Cochamó">
 </section>
 
-<!-- ===== BOTÓN SORPRESA ===== -->
+<!-- ===== SECCIÓN SORPRESA ===== -->
 
-<section class="sorpresa">
+<section class="sorpresa" style="text-align:center; padding:100px 10%;">
 
-    <button id="btnSorpresa" onclick="mostrarSorpresa()">
+    <button id="btnSorpresa" style="
+        padding:15px 40px;
+        font-size:1rem;
+        background:white;
+        color:black;
+        border:none;
+        border-radius:40px;
+        cursor:pointer;
+        transition:0.3s;">
         ✨ Ver nuestro primer 14 de febrero
     </button>
 
-    <div id="contenidoSorpresa" class="contenido-sorpresa">
-        <img src="constelaciones.jpg" alt="Constelaciones">
-        <p>
+    <div id="contenidoSorpresa" style="
+        display:none;
+        margin-top:60px;
+        animation:fadeIn 1.2s ease forwards;">
+
+        <img src="IMG_2214.jpeg" alt="Constelaciones"
+             style="width:600px; max-width:90%; border-radius:20px; margin-bottom:30px;">
+
+        <p style="line-height:1.8; font-size:1.1rem;">
         14 de febrero de 2024 — Un picnic bajo las estrellas, a orillas del río en Cochamó.
         uno de los momentos mas bonitos de nuestra relacion. Nos quedamos ahí casi toda la noche, sin apuro, con el cielo como testigo de algo que recién comenzaba.
         Fue nuestro primer San Valentín. Una noche que no voy a olvidar nunca.
         </p>
+
     </div>
 
 </section>
 
-<footer>
-    Feliz cumple Peque ✨
-</footer>
 
 </body>
 </html>
+
 
